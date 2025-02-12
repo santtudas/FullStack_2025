@@ -3,4 +3,4 @@
 Repositoryn omistaja on Santeri Pulliainen.
 
 # Copyright
-&copy 2025 Santeri Pulliainen
+© 2025 Santeri Pulliainen
