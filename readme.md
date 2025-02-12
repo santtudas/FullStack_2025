@@ -2,5 +2,5 @@
 
 Repositoryn omistaja on Santeri Pulliainen.
 
-#Copyright
-© 2025 Santeri Pulliainen
+# Copyright
+&copy 2025 Santeri Pulliainen
