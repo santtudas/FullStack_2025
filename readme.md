@@ -1,1 +1,1 @@
-# Tämä on Laurean FullStack kansio
+# Tämä on Laurean FullStack 2025 kansio
