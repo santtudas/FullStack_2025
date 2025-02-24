@@ -1,0 +1,1 @@
+Testitiedosto example.txt:n sisältö
