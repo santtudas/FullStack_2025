@@ -5,7 +5,7 @@ const path = require('path');
 const data = "Moikka vaan, tässä tekstiä treeniä varten."
 const data2 = "Tässä lisää tekstiä."
 const filePath = path.join(__dirname, 'watch.txt');
-
+/*
 function fetchData() {
   axios.get('https://jsonplaceholder.typicode.com/posts')	// Hae data
       .then(function(response) {
@@ -16,10 +16,10 @@ function fetchData() {
         console.error('Error fetching data:', error); // Logaa error, jos failaa
       });
 }
-	
+			
 // Kutsu funktiota
 fetchData();
-
+*/
 //	Exercise 4: Reading Files
 function readFile() {
 	fs.readFile('example.txt', 'utf8', function(err, data) { // Luetaan example.txt tiedosto
@@ -72,6 +72,7 @@ removeText();
 
 //	Exercise 7: Working with Directories
 function createDir() {
+	const dirPath = path.join(__dirname, "testi");
 	fs.mkdir(path.join(__dirname, 'testi'), function(err) { // Luodaan tiedosto "testi"
 		if (err) {
 			console.log(err);	// Logataan error jos failaa
@@ -79,6 +80,19 @@ function createDir() {
 			return;
 		}
 		console.log("Tiedoston luonti onnistui"); 	// Logataan jos luonti onnistuu
+
+		removeDir(dirPath);
+	});
+};
+
+function removeDir(dirPath) {
+	fs.rmdir(dirPath, function(err) {
+		if (err) {
+			console.log(err); // Logataan eror jos failaa
+			console.log("Tiedoston poisto epäonnistui");
+			return;
+		}
+		console.log("Tiedoston poisto onnistui"); // Logataan onnistuminen
 	});
 };
 // Kutsutaan funktiota
