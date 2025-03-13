@@ -36,8 +36,6 @@ app.get('/services', (req, res) => {
     res.send("Service Page");
 });
 
-//app.use(express.static(path.join(__dirname, 'public')));
-
 app.get('/static', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
