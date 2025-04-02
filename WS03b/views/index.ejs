@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/header.ejs') %>
+  <body>
+    <h1>Hello World!</h1>
+    <p>Tämä on EJS testisivu.</p>
+    <h2>Nimesi on <%= data.nimi %></h2>
+    <div>Osallistujat ovat:</div>
+    <% for (let i = 0; i < osallistujat.length; i++) { %>
+    <div><%= osallistujat[i] %></div>
+
+    <% } %>
+    <% if (condition) { %>
+      <h1>Condition on tosi!</h1>
+
+    <% } else { %>
+      <h1>Condition ei ole tosi!</h1>
+    <% } %>
+
+  <%- include('partials/footer.ejs') %>
+  </body>
+</html>
